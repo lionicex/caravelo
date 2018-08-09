@@ -1,0 +1,22 @@
+
+h2 {
+  color: darkblue;
+}
+h4{
+  padding-bottom: 30px;
+  color: darkblue;
+}
+button{
+  width: 100%;
+  background-color: darkblue;
+  color: #ffffff;
+}
+.accordion, .card{
+  border: none !important;
+}
+div .card .card-header{
+  background-color: darkblue;
+  border-radius: 5px ;
+  margin: 5px;
+}
+

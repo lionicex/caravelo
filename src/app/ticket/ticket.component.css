@@ -1,0 +1,20 @@
+.content-ticket {
+  width: 60%;
+  margin: auto;
+}
+.ticket-card {
+  margin: 150px 0 30px 0;
+  border: .5px darkblue solid;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  color: #00005c;
+
+}
+.card-header{
+  background-color: darkblue;
+  color: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+

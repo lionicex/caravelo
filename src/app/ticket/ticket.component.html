@@ -1,0 +1,10 @@
+<div class="content-ticket">
+  <div class="card mb-3 ticket-card">
+    <div class="card-header">Your selection ticket</div>
+    <div class="card-body" *ngFor="let ticket of tickets" >
+      <h5 class="card-text ">{{ticket.journeyKey}}</h5>
+      <p class="card-text mb-2">Meal: {{ticket.mealId}}</p>
+      <p class="card-text">Price: {{ticket.amount}} {{ticket.currency}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "selection": [
+    {
+      "journeyKey": "TST12 BCN-LAX 30/08/2014 08:35",
+      "amount": 15,
+      "currency": "EUR",
+      "mealId": "ML03"
+    }, {
+      "journeyKey": "TST21 LAX-BCN 30/09/2014 08:35",
+      "amount": 10,
+      "currency": "EUR",
+      "mealId": "ML01"
+    } ]
+}
