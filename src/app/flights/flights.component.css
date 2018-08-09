@@ -1,22 +1,27 @@
 
 h2 {
-  color: darkblue;
+    color: darkblue;
 }
-h4{
-  padding-bottom: 30px;
-  color: darkblue;
+
+h4 {
+    padding-bottom: 30px;
+    color: darkblue;
 }
-button{
-  width: 100%;
-  background-color: darkblue;
-  color: #ffffff;
+
+button {
+    width: 100%;
+    background-color: darkblue;
+    color: #ffffff;
+    font-size: 20px;
 }
-.accordion, .card{
-  border: none !important;
+
+.accordion, .card {
+    border: none !important;
 }
-div .card .card-header{
-  background-color: darkblue;
-  border-radius: 5px ;
-  margin: 5px;
+
+div .card .card-header {
+    background-color: darkblue;
+    border-radius: 5px;
+    margin: 5px;
 }
 
