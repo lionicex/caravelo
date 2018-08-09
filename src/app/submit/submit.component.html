@@ -1,3 +1,3 @@
-<button (submit)="downloadJSON()" [class]="selections !== null ? 'btn btn-primary btn-lg short-margin' : 'btn btn-primary btn-lg long-margin'"
-        type="submit" [disabled]="selections === null">Submit
-</button>
+<a [class]="selections !== null ? 'btn btn-primary btn-lg short-margin' : 'btn btn-primary disabled btn-lg long-margin'"
+   [href]="jsonURL" download="output.json" (click)="outputJson()">Submit
+</a>
