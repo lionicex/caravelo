@@ -1,14 +1,14 @@
 <div class="content-meal">
-  <div class="card mb-3 meal-card" *ngFor="let meal of meals">
-    <img class="card-img-top" [src]="meal.routeImage">
-    <div class="card-body">
-      <h5 class="card-title">{{meal.mealId}}</h5>
-      <p class="card-text">{{meal.desc}}</p>
-        <div class="btn-group" role="group">
-          <button type="button" class="btn" (click)="minus(meal)"><i class="fas fa-minus"></i></button>
-          <span class="btn badge"><h4>{{meal.price}} {{currentcy}}</h4></span>
-          <button type="button" class="btn" (click)="plus(meal)"><i class="fas fa-plus"></i></button>
+    <div class="card mb-3 meal-card" *ngFor="let meal of meals">
+        <img class="card-img-top" [src]="meal.routeImage">
+        <div class="card-body">
+            <h5 class="card-title">{{meal.mealId}}</h5>
+            <p class="card-text">{{meal.desc}}</p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn" (click)="minus(meal)"><i class="fas fa-minus"></i></button>
+                <span class="btn badge"><h4>{{meal.price}} {{meal.currency}}</h4></span>
+                <button type="button" class="btn" (click)="plus(meal)"><i class="fas fa-plus"></i></button>
+            </div>
         </div>
     </div>
-  </div>
 </div>

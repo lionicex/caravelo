@@ -1,21 +1,21 @@
 <div class="select-title">
-  <h2>Select your meal</h2>
-  <h4>{{passengers[0].prefix}} {{passengers[0].firstName}} {{passengers[0].lastName}}</h4>
+    <h2>Select your meal</h2>
+    <h4>{{passengers[0].prefix}} {{passengers[0].firstName}} {{passengers[0].lastName}}</h4>
 </div>
 <div class="accordion content" id="accordionExample">
-  <div class="card" *ngFor="let flight of flights">
-    <div class="card-header" [id]="'heading' + flight.flight">
-      <h3 class="mb-0">
-        <button [class]="flight.expanded == 'true' ? 'btn' : 'btn collapsed'" type="button"
-                data-toggle="collapse" [attr.data-target]="'#collapse' + flight.flight"
-                [attr.aria-expanded]="flight.expanded" [attr.aria-controls]="'collapse' + flight.flight">
-          {{flight.departure}} - {{flight.arrival}}
-        </button>
-      </h3>
+    <div class="card" *ngFor="let flight of flights">
+        <div class="card-header" [id]="'heading' + flight.flight">
+            <h3 class="mb-0">
+                <button [class]="flight.expanded == 'true' ? 'btn' : 'btn collapsed'" type="button"
+                        data-toggle="collapse" [attr.data-target]="'#collapse' + flight.flight"
+                        [attr.aria-expanded]="flight.expanded" [attr.aria-controls]="'collapse' + flight.flight">
+                    {{flight.departure}} - {{flight.arrival}}
+                </button>
+            </h3>
+        </div>
+        <div [id]="'collapse' + flight.flight" [class]="flight.expanded == 'true' ? 'collapse show' : 'collapse'"
+             [attr.aria-labelledby]="'heading' + flight.flight" data-parent="#accordionExample">
+            <app-meal (mealChanged)="addSelection(flight.key, $event)"></app-meal>
+        </div>
     </div>
-    <div [id]="'collapse' + flight.flight" [class]="flight.expanded == 'true' ? 'collapse show' : 'collapse'"
-         [attr.aria-labelledby]="'heading' + flight.flight" data-parent="#accordionExample">
-      <app-meal></app-meal>
-    </div>
-  </div>
 </div>

@@ -1,14 +1,15 @@
-nav{
-  justify-content: center;
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  width: 100%;
-  background-color: #ffffff;
-  color: grey;
-  font-size: xx-small;
-  border-top: 1px lightgrey solid;
+nav {
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: grey;
+    font-size: xx-small;
+    border-top: 1px lightgrey solid;
 }
-nav p{
-  padding-top: 15px;
+
+nav p {
+    padding-top: 15px;
 }
